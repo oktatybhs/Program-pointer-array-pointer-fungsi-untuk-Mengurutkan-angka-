@@ -12,3 +12,16 @@ using namespace std;
 	{
 	 return ( * (int *)y - * (int *)x );
 	}
+	
+	int main(){
+	int bilangan[] = {3, 5, 2, 1, 4};  //pendeklarasian variabel array beserta isinya
+	int i; 
+	//menampilkan sebelum diurutkan
+		cout << "Sebelum di urutkan : " << endl;
+			for (i = 0; i < 5; i++)
+				cout << bilangan[i] << ' ';
+			 	cout << endl << endl;
+		
+	//menampilkan urutan naik
+	qsort(bilangan, 5, sizeof(int), urut_naik);
+		cout << "Urut naik:" << endl;
