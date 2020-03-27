@@ -25,3 +25,15 @@ using namespace std;
 	//menampilkan urutan naik
 	qsort(bilangan, 5, sizeof(int), urut_naik);
 		cout << "Urut naik:" << endl;
+		for (i = 0; i < 5; i++)
+				cout << bilangan[i] << ' ';
+				cout << endl << endl;
+
+	//menampilkan urutan menurun
+	qsort(bilangan, 5, sizeof(int), urut_turun);
+		cout << "Urut turun:" << endl;
+			for (i = 0; i < 5; i++)
+				cout << bilangan[i] << ' ';
+
+	    return 0;
+	}
