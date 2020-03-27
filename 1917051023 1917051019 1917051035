@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+	int urut_naik(const void *x, const void *y) 
+	{
+	  return ( * ( int * )x - * ( int * )y );
+	}
+
+	int urut_turun(const void *x, const void *y)
+
+	{
+	 return ( * (int *)y - * (int *)x );
+	}
